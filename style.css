@@ -2,9 +2,11 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Varela Round", sans-serif;
 }
 
-ul {
+ul,
+a {
   list-style: none;
   padding: 0;
 }
@@ -72,9 +74,87 @@ ul {
   }
 }
 
+#our-mission,
+#services,
+#contact-us {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  padding: 1rem 2rem;
+  text-align: center;
+}
+
+#services > h2 span {
+  width: 100%;
+}
+
+.cut-style .color .texture .wax {
+  width: 25%;
+  box-shadow: 1px 2px 5px 0px rgba(0, 0, 0, 0.33);
+  background: white;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
 /* Responsive mobile*/
-@media screen and (max-width: 375px) {
-  body {
-    background-color: blue;
+@media screen and (min-width: 375px) {
+  header {
+    display: flex;
+    justify-content: center;
+  }
+  .header-logo {
+    width: 200px;
+    height: auto;
+  }
+
+  .header-img {
+    display: none;
+  }
+
+  .cut-style,
+  .color,
+  .texture,
+  .wax {
+    width: 100%;
+    box-shadow: 1px 2px 5px 0px rgba(0, 0, 0, 0.33);
+    background: white;
+    padding: 1rem;
+  }
+
+  #services h3 {
+    font-size: 35px;
+    padding-bottom: 10px;
+  }
+
+  #services li {
+    padding-bottom: 5px;
+  }
+
+  #services div {
+    margin-bottom: 12px;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem;
+  }
+
+  footer section address {
+    width: 100%;
+  }
+
+  address > a {
+    text-decoration: underline black;
+  }
+
+  #social-media-images {
+    width: 33.33%;
+    padding: 3rem;
   }
 }
