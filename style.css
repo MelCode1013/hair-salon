@@ -84,14 +84,31 @@ a {
   text-align: center;
 }
 
-#services > h2 span {
-  width: 100%;
+#our-mission {
+  margin-top: 5%;
 }
+
+#our-mission, #services div {
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 1px 2px 5px 0px rgba(0, 0, 0, 0.33);
+}
+
+#services div {
+  padding: 5% 0 5% 0;
+}
+
 
 .cut-style .color .texture .wax {
   width: 25%;
   box-shadow: 1px 2px 5px 0px rgba(0, 0, 0, 0.33);
   background: white;
+}
+
+#contact-us {
+  padding: 5%;
+  margin: 2% 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.33);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.33);
 }
 
 footer {
@@ -102,6 +119,12 @@ footer {
 
 /* Responsive mobile*/
 @media screen and (min-width: 375px) {
+html {
+  background-image: url("./img/woman-hair-mobile-first.jpg");
+  /* background-size: contain; */
+  background-position: left;
+}
+
   header {
     display: flex;
     justify-content: center;
@@ -109,6 +132,7 @@ footer {
   .header-logo {
     width: 200px;
     height: auto;
+    margin: 1rem;
   }
 
   .header-img {
@@ -125,6 +149,24 @@ footer {
     padding: 1rem;
   }
 
+  #our-mission {
+    margin-top: 5%;
+  }
+
+  #services div {
+    padding: 5% 0 5% 0;
+    margin-bottom: 12px;
+  }
+
+  #services h2 {
+    font-size: 35px;
+  }
+
+  #services h2 span {
+    box-shadow: 1px 2px 5px 0px rgba(0, 0, 0, 0.33);
+    background: white;
+  }
+
   #services h3 {
     font-size: 35px;
     padding-bottom: 10px;
@@ -134,27 +176,49 @@ footer {
     padding-bottom: 5px;
   }
 
-  #services div {
-    margin-bottom: 12px;
-  }
-
   footer {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 2rem;
+    padding: 0 2rem;
   }
 
   footer section address {
     width: 100%;
   }
 
-  address > a {
+  .footer-nav {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+  }
+
+  .footer-nav img {
+    width: 200px;
+    height: auto;
+    margin-left: 20px;
+  }
+
+  .footer-nav a {
+    text-decoration: none;
+  }
+
+  address a {
     text-decoration: underline black;
   }
 
   #social-media-images {
-    width: 33.33%;
-    padding: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#facebook img, #twitter img, #instagram img {
+  width: 75px;
+  margin: 5% 5% 20% 5%; }
+
+  address {
+    text-align: center;
   }
 }
