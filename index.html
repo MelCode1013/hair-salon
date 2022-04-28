@@ -49,11 +49,15 @@
     <section id="our-mission">
         <h2>Our Mission</h2>
         <p>To give you the very best style. We offer a variety of services. Make an appointment or stop by our store.
-            Hair care is self care.</p>
+            <br>
+            Hair care is self care.
+        </p>
     </section>
     <section id="services">
-        <h2>Services</h2>
-        <span>Call us for pricing.</span>
+        <div>
+            <h2>Services</h2>
+            <span>Call us for pricing.</span>
+        </div>
         <div class="cut-style">
             <h3>Cut & Style</h3>
             <ul>
@@ -92,6 +96,7 @@
             </ul>
         </div>
     </section>
+
     <section id="contact-us">
         <h2>Contact Us</h2>
         <form name="contact" method="POST" data-netlify="true">
@@ -101,7 +106,7 @@
             <p>
                 <label>Your Email: <input type="email" name="email" /></label>
             </p>
-            <p>
+            <p id="message">
                 <label>Message: <textarea name="message"></textarea></label>
             </p>
             <p>
@@ -109,20 +114,21 @@
             </p>
         </form>
     </section>
+
     <footer>
         <section id="social-media-images">
-            <section class="social-media">
+            <section id="facebook">
                 <img src="img/Facebook-icon.png" alt="facebook icon">
             </section>
-            <section class="social-media">
+            <section id="twitter">
                 <img src="img/twitter-icon.png" alt="facebook icon">
             </section>
-            <section class="social-media">
+            <section id="instagram">
                 <img src="img/Instagram-Icon.png" alt="facebook icon">
             </section>
             <section>
 
-                <nav>
+                <nav class="footer-nav">
                     <ul>
                         <li><a href="#our-mission">Our Mission</a></li>
                         <li><a href="#services">Services</a></li>
