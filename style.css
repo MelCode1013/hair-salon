@@ -94,11 +94,8 @@ a {
   box-shadow: 1px 2px 5px 0px rgba(0, 0, 0, 0.33);
 }
 
-#services div {
-  padding: 5% 0 5% 0;
-}
 
-.cut-style .color .texture .wax {
+#cut-style, #color, #texture, #wax {
   width: 25%;
   box-shadow: 1px 2px 5px 0px rgba(0, 0, 0, 0.33);
   background: white;
@@ -162,15 +159,7 @@ html {
 
   }
 
-  .cut-style,
-  .color,
-  .texture,
-  .wax {
-    width: 100%;
-    box-shadow: 1px 2px 5px 0px rgba(0, 0, 0, 0.33);
-    background: white;
-    padding: 1rem;
-  }
+  
 
   #our-mission {
     margin-top: 5%;
@@ -203,6 +192,13 @@ html {
   #services li {
     padding-bottom: 5px;
     font-size: 4.5vw;
+  }
+
+  #cut-style, #color, #texture, #wax {
+    width: 100%;
+    box-shadow: 1px 2px 5px 0px rgba(0, 0, 0, 0.33);
+    background: white;
+    padding: 1rem;
   }
 
   footer {
@@ -263,12 +259,29 @@ html {
   }
 
   #services {
+    flex-wrap: wrap;
     flex-direction: row;
   }
 
-  #services > div {
+  #services-and-pricing-container {
     width: 100%;
   }
+
+  #services h3 {
+    font-size: 4vw; 
+  }
+
+  #services li {
+    font-size: 2vw;
+  }
+
+  #cut-style, #color, #texture, #wax {
+    width: 20%;
+  }
+
+
+ 
+
 
 }
 
