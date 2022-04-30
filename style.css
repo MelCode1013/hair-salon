@@ -21,6 +21,7 @@ a {
   max-width: 1000px;
   position: relative;
   margin: auto;
+  background-color: white;;
 }
 
 /* Hide the images by default */
@@ -97,7 +98,6 @@ a {
   padding: 5% 0 5% 0;
 }
 
-
 .cut-style .color .texture .wax {
   width: 25%;
   box-shadow: 1px 2px 5px 0px rgba(0, 0, 0, 0.33);
@@ -117,26 +117,49 @@ footer {
   padding: 2rem;
 }
 
-/* Responsive mobile*/
+/* hidden image up to ipad landscape and bigger (1180px)*/
+@media (max-width: 1179px) {
+  .header-img {
+    display: none;
+  }
+}
+
+/* Responsive mobile and ipad 820px*/
 @media screen and (min-width: 375px) {
 html {
   background-image: url("./img/woman-hair-mobile-first.jpg");
-  /* background-size: contain; */
-  background-position: left;
-}
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+
+}   
 
   header {
     display: flex;
     justify-content: center;
+    background-color: white;
+    margin-bottom: 2vw;
+
   }
   .header-logo {
-    width: 200px;
+    width: 53vw;
     height: auto;
     margin: 1rem;
+    padding: 3vw;
   }
 
-  .header-img {
-    display: none;
+  #services span {
+    font-size: 3.5vw;
+
+  }
+
+  #services-and-pricing-container {
+    padding: 5% 0 5% 0;
+    background: linear-gradient(175deg, rgba(134,154,255,.8) 32%, rgba(252,70,107,.8) 100%);
+    color: white;
+    text-shadow: 2px 2px #000000;
+
+
   }
 
   .cut-style,
@@ -151,6 +174,11 @@ html {
 
   #our-mission {
     margin-top: 5%;
+    padding: 2rem 2rem;
+  }
+
+  #our-mission h2{
+    font-size: 9vw;
   }
 
   #services div {
@@ -159,7 +187,7 @@ html {
   }
 
   #services h2 {
-    font-size: 35px;
+    font-size: 9vw;
   }
 
   #services h2 span {
@@ -168,12 +196,13 @@ html {
   }
 
   #services h3 {
-    font-size: 35px;
+    font-size: 9vw;
     padding-bottom: 10px;
   }
 
   #services li {
     padding-bottom: 5px;
+    font-size: 4.5vw;
   }
 
   footer {
@@ -191,6 +220,8 @@ html {
     display: flex;
     justify-content: space-between;
     align-content: center;
+    margin-top: 5%;
+
   }
 
   .footer-nav img {
@@ -220,5 +251,25 @@ html {
 
   address {
     text-align: center;
+    margin: 5% 0;
+    font-size: 5vw;
   }
 }
+
+/* Responsive ipad landscape*/
+@media screen and (min-width: 1180px) {
+  #our-mission {
+    margin: 1rem 2rem;
+  }
+
+  #services {
+    flex-direction: row;
+  }
+
+  #services > div {
+    width: 100%;
+  }
+
+}
+
+
