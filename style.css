@@ -2,7 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Varela Round", sans-serif;
+  font-family: 'Prompt', sans-serif;
 }
 
 ul,
@@ -11,6 +11,9 @@ a {
   padding: 0;
 }
 
+li {
+  font-weight: 300;
+}
 .header-img {
   width: 50%;
   height: auto;
@@ -75,6 +78,33 @@ a {
   }
 }
 
+#services-and-pricing-container {
+  background-color: #000000;
+    background-image: url("img/hairSalon.jpg");
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+}
+
+#services-and-pricing-container > h2 ~ span {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: .1vw;
+  border-radius: 1vw;
+  font-weight: 200;
+  font-style: italic;
+}
+
+#services-and-pricing-container > h2 {
+  background-color: rgba(0, 0, 0, 0.7);
+  margin: 0 20vw;
+  border-radius: 1vw;
+}
+
+#our-mission p {
+  font-weight: 300;
+  font-size: 2vw;
+}
+
 #our-mission,
 #services,
 #contact-us {
@@ -102,16 +132,35 @@ a {
 }
 
 #contact-us {
-  padding: 5%;
-  margin: 2% 0;
+  padding: 5vw 21vw;
+  margin: 2% 0 0 0;
   border-top: 1px solid rgba(0, 0, 0, 0.33);
   border-bottom: 1px solid rgba(0, 0, 0, 0.33);
+  background-image: url("img/hair-tools.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+
+.form-background-color {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, .9);
+  border-radius: 10px;
+  padding-bottom: 1vw;
 }
 
 footer {
   display: flex;
   justify-content: space-between;
-  padding: 2rem;
+  padding: 3vw;
+  background-color: white;
+  height: 100%;
+}
+
+.footer-nav ul {
+  padding-right: 4vw;
 }
 
 /* hidden image up to ipad landscape and bigger (1180px)*/
@@ -152,7 +201,7 @@ html {
 
   #services-and-pricing-container {
     padding: 5% 0 5% 0;
-    background: linear-gradient(175deg, rgba(134,154,255,.8) 32%, rgba(252,70,107,.8) 100%);
+    
     color: white;
     text-shadow: 2px 2px #000000;
 
@@ -217,13 +266,14 @@ html {
     justify-content: space-between;
     align-content: center;
     margin-top: 5%;
-
+    text-align: center;
   }
 
   .footer-nav img {
-    width: 200px;
+    width: 53vw;
     height: auto;
-    margin-left: 20px;
+    padding-left: 3vw;
+    margin-top: 3vw;
   }
 
   .footer-nav a {
@@ -239,18 +289,63 @@ html {
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
+    
 }
 
 #facebook img, #twitter img, #instagram img {
   width: 75px;
-  margin: 5% 5% 20% 5%; }
+  margin: 20% 5% 5% 5%; }
 
   address {
     text-align: center;
     margin: 5% 0;
-    font-size: 5vw;
+    font-size: 4vw;
+    font-weight: 500;
   }
 }
+
+/* Responsive ipad portrait*/
+
+@media screen and (min-width: 820px) {
+  #social-media-images {
+    flex-wrap: nowrap;
+    padding: 2vw;
+  }
+
+  #facebook, #twitter, #instagram, .footer-nav > ul {
+    align-self: center;
+  
+  }
+  #facebook img, #twitter img, #instagram img {
+    margin: 0;
+    padding: 1vw
+  }
+
+  .footer-nav {
+    margin: 0;
+    padding-left: 1vw;
+  }
+
+  .footer-nav ul, .footer-nav img {
+    padding: 0;
+  }
+
+
+  .footer-nav ul {
+    width: 15vw;
+    font-size: 2vw;
+    padding-right: 2vw;
+  }
+
+  .footer-nav img {
+    width: 40vw;
+  }
+
+  header {
+    margin:0
+  }
+}
+
 
 /* Responsive ipad landscape*/
 @media screen and (min-width: 1180px) {
@@ -261,6 +356,8 @@ html {
   #services {
     flex-wrap: wrap;
     flex-direction: row;
+    justify-content: space-between;
+    
   }
 
   #services-and-pricing-container {
@@ -268,7 +365,8 @@ html {
   }
 
   #services h3 {
-    font-size: 4vw; 
+    font-size: 4vw;
+    padding: 1.5vw;
   }
 
   #services li {
@@ -276,13 +374,20 @@ html {
   }
 
   #cut-style, #color, #texture, #wax {
-    width: 20%;
+    width: 24%;
+    padding: 5vw;
   }
-
-
- 
-
-
 }
 
+@media screen and (min-width: 1600px){
 
+.form-background-color {
+    width: 30vw;
+    margin: auto;
+}
+
+#facebook img, #twitter img, #instagram img  {
+  width: 10vw;
+}
+
+}
