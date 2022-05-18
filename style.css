@@ -5,10 +5,25 @@
   font-family: 'Prompt', sans-serif;
 }
 
+header > div {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+header {
+  flex-wrap: wrap;
+}
+
+header > div > img {
+  width: 50%;
+}
+
 ul,
 a {
   list-style: none;
   padding: 0;
+  text-decoration: none;
 }
 
 li {
@@ -16,7 +31,30 @@ li {
 }
 .header-img {
   width: 50%;
-  height: auto;
+  height: 100%;
+  margin-left:7%;
+}
+
+header > nav {
+  background-color: black;
+  width: 100%;
+  margin-top: 0;
+  padding: 0 4%;
+}
+
+header > nav > ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+header a {
+  color: white;
+  font-size: 1.5rem;
+}
+
+header li {
+  padding: 1%;
+
 }
 
 /* Slideshow container */
@@ -188,7 +226,7 @@ html {
 
   }
   .header-logo {
-    width: 53vw;
+    width: 40%;
     height: auto;
     margin: 1rem;
     padding: 3vw;
@@ -391,3 +429,4 @@ html {
 }
 
 }
+
